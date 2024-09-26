@@ -1,0 +1,15 @@
+This is the result
+
+plaintext: Trương Đức Hào - 22520407 - ATTTK17.1
+key: 711930351BF4B87812798E176942E3E2
+ciphertext: 26D16F31B9AB8645A1458ADBB58B3264DEF670E43FC2141FA567719D7D964160DB8335316D59F667AD227DFBE7BC3012
+recovertext: Trương Đức Hào - 22520407 - ATTTK17.1
+--------------------------------------------------------------------------------
+Time counter
+
+time encrypt 10000: 14 ms
+average encrypt time: 0.0014 ms
+
+time decrypt 10000: 11 ms
+average decrypt time: 0.0011 ms
+--------------------------------------------------------------------------------

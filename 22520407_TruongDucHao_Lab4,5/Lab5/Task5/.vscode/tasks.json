@@ -1,0 +1,99 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g2", 
+				"-O3", 
+				"-DNDEBUG", 
+				"${file}", 
+				"-o", 
+				"${fileDirname}\\${fileBasenameNoExtension}.exe", 
+				"-D_WIN32_WINNT=0x0501", 
+				"-lpthread", 
+				"-L${workspaceFolder}\\lib", 
+				"-l:libcryptopp.a", 
+				"-I${workspaceFolder}\\include", 
+                  "-Wall",
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
+
+// {
+// 	"version": "2.0.0",
+// 	"tasks": [
+// 		{
+// 			"type": "shell",
+// 			"label": "C/C++: g++ linux",
+// 			"command": "/usr/bin/g++",
+// 			"args": [
+// 				"-g2", 
+// 				"-O3",
+// 				"-DNDEBUG", 
+// 				"${file}", 
+// 				"-o", 
+// 				"${fileDirname}/${fileBasenameNoExtension}", 
+// 				"-pthread", 
+// 				"-I${workspaceFolder}/include", 
+// 				"-L${workspaceFolder}/lib", 
+// 				"-l:libcryptopp.a", 
+// 				"-Wall", 
+// 			],
+// 			"options": {
+// 				"cwd": "${fileDirname}"
+// 			},
+// 			"problemMatcher": [
+// 				"$gcc"
+// 			],
+// 			"group": "build",
+// 			"detail": "compiler: /usr/bin/g++"
+// 		}
+// 	]
+// }
+
+// {
+// 	"version": "2.0.0",
+// 	"tasks": [
+// 		{
+// 			"type": "shell",
+// 			"label": "C/C++: g++.exe build so file",
+// 			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+// 			"args": [
+// 				"-fdiagnostics-color=always",
+//                 "-g",
+//                 "-O3",
+//                 "${file}",
+//                 "-o",
+//                 "${fileDirname}\\${fileBasenameNoExtension}.so",
+//                 "-L${workspaceFolder}\\lib", 
+// 				"-l:libcryptopp.a", 
+// 				"-I${workspaceFolder}\\include", 
+//                 "-lcrypt32", //Win API crypt32.lib
+//                 "-lws2_32", //Win API ws2_32.lib
+//                 "-shared", // for .so only
+//                 //"-DBUILD_DLL", // for define macro: BUILD_DLL
+//                 "-fvisibility=hidden", //for .so only
+// 			],
+// 			"options": {
+// 				"cwd": "${fileDirname}"
+// 			},
+// 			"problemMatcher": [
+// 				"$gcc"
+// 			],
+// 			"group": "build",
+// 			"detail": "compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+// 		}
+// 	]
+// }
